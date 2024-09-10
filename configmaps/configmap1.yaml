@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sharding-config
+  namespace: argocd-1
+data:
+  shfard-count: "5"
+  shafrd-replication: "enabled"
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: argocd-1
